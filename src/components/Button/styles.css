@@ -1,0 +1,15 @@
+.button {
+    border: 1px solid black;
+    padding: 8px;
+    min-width: 60px;
+    background-color: #61D9FB;
+    color: black;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    scale: 1.01;
+}
