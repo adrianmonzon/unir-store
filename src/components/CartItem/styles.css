@@ -1,0 +1,40 @@
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    width: 400px;
+}
+
+.cartItem__bottom {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.cartItem__image {
+    width: 30px;
+}
+
+.cartItem__left {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    justify-content: flex-start;
+}
+
+.cartItem__right {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    justify-content: flex-end;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:grey;
+    height: 1px;
+}

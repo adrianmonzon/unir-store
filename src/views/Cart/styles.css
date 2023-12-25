@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 5em;
+    gap: 3em;
 }
 
-.cart__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-items: center;
 }
 

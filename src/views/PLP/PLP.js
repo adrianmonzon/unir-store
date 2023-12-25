@@ -1,6 +1,5 @@
 import './styles.css'
 import { useEffect, useState } from "react"
-import Product from "../../components/Product/Product"
 import Search from "../../components/Filters/Search/Search";
 import Loader from "../../components/Loader/Loader";
 

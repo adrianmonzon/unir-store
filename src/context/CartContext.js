@@ -10,7 +10,7 @@ export const CartProvider = ({ children }) => {
         if (!isProductInCart) {
             setCart([...cart, product]);
         } else {
-            alert("Product is already in the cart!");
+            alert("CartItem is already in the cart!");
         }
     };
 

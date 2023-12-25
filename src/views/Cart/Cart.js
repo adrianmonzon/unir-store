@@ -1,27 +1,28 @@
 import "./styles.css"
 import {CartContext} from "../../context/CartContext";
-import {useContext, useEffect} from "react";
-import Product from "../../components/Product/Product";
+import {useContext} from "react";
 import Message from "../../components/Message/Message";
 import Button from "../../components/Button/Button";
 import useRedirection from "../../hooks/useRedirection";
+import CartItem from "../../components/CartItem/CartItem";
 
 const Cart = () => {
     let { cart, setCart } = useContext(CartContext);
-    const redirect = useRedirection("/", 1000)
+    const redirect = useRedirection("/", 1000);
 
     const placeOrder = () => {
         alert("Nice! Your order has been requested :)");
         setCart([]);
-        redirect()
+        redirect();
     };
 
     return (
         <section className="cart">
             {
                 cart.length ?
-                    <div className="cart__grid">
-                        {cart.map(el => <Product key={el.id} id={el.id} image={el.image} title={el.title} description={el.description} price={el.price} />)}
+                    <div className="cart__items">
+                        {cart.map(el => <CartItem key={el.id} id={el.id} image={el.image} title={el.title} description={el.description} price={el.price} />)}
+
                     </div>
                     : <Message content="Cart is empty :(" />
             }
