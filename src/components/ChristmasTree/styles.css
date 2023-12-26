@@ -9,7 +9,7 @@
     --star-delay: 2;
     --ring-delay: 1;
     --reveal-delay: 3s;
-    --ring: #169f48;
+    --ring: limegreen;
     --bauble-one: 6;
     --bauble-two: 130;
 }
@@ -74,7 +74,7 @@
 .tree__star {
     stroke-width: calc(var(--size) * 0.25);
     stroke: #f0db4d;
-    filter: drop-shadow(0 0 2vmin #fcf1cf);
+    filter: drop-shadow(0 0 8px #ffe58a);
     height: calc(var(--size) * 0.25);
     aspect-ratio: 1;
     overflow: visible !important;
@@ -84,7 +84,7 @@
     position: absolute;
     stroke-dasharray: 1000 1000;
     fill: none;
-    animation: stroke 1s calc(var(--star-delay) * 1s) both;
+    animation: stroke 2s calc(var(--star-delay) * 1s) both;
 }
 
 @keyframes stroke {
